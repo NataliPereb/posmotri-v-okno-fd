@@ -49,3 +49,186 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+
+
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 133px 30px;
+  column-gap: 30px;
+}
+
+/*видео с формой*/
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+/* видео*/
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 40px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  width: 100%;
+  height: 100%;
+}
+
+/*маленькте видео*/
+
+.content__list-container {
+  height: 298px;
+  overflow: scroll;
+  overflow-x: hidden; /*убрала нижний скрол*/
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+/* внизу под основным видео*/
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+
+
+/*h1*/
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 94%;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+
+
+
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.content__video-card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*h2*/
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;   
+  max-width: 200px;
+}
+
+
+
+.visually-hidden { /*4 шаг*/
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.search-form__checkbox-list { /*4.1*/
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__fieldset { /*4.2*/
+  border: none;
+}
+
+.search-form__label { /*4.1*/
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  /*column-gap: 50px;*/
+}
+
+/*инпут*/
+
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: #fff;
+  appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
