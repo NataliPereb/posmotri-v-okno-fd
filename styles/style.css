@@ -142,12 +142,14 @@ ol {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  max-width: fit-content;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 16.2px;
+  
 }
 
 .title {
@@ -174,14 +176,11 @@ ol {
 .content__card-link:hover .content__video-card-title,
 .content__card-link:hover .content__video-card-description {
   text-decoration: underline;
-  text-underline-offset: 7px;
-  text-decoration-skip-ink: none;
 }
 
 .content__card-link:hover .content__video-card-description {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
-  display: inline;
   line-height: 16.2px;
 }
 
@@ -197,6 +196,10 @@ ol {
 
 .content__list-item {
   padding: 0 3px;
+}
+
+.content__card-link_current { 
+  background-color: #545050; 
 }
 
 .button,
